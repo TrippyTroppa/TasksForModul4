@@ -10,7 +10,12 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
+            var MyApple = 5;
+            var HisPears = 5;
+            var HisApples = 6;
 
+            var result = (MyApple != HisApples) & (MyApple == HisPears);
+            Console.WriteLine(result);
         }
     }
 }
