@@ -10,11 +10,12 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            int CurrentDay = 293;
-            bool isLeapYear = false;
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            bool c = a == b;
+            Console.WriteLine(c);
 
-            bool isWinter = (!isLeapYear & (CurrentDay >= 335 | CurrentDay <= 59)) | (isLeapYear & (CurrentDay >= 336 | CurrentDay <= 60));
-            Console.WriteLine($"Текущее время года зима: {isWinter}");
+
         }
     }
 }
