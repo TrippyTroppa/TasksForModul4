@@ -12,7 +12,7 @@ namespace TasksForModul4
         {
             Console.WriteLine("Введите свой любимый цвет на английском языке с маленькой буквы");
             var color = Console.ReadLine();
-            for (int i = 1; i < 5; i++)
+            for (int i = 5; i > 1; i--)
             {
                 Console.WriteLine("Iteration {0}", i);
 
