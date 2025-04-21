@@ -39,6 +39,7 @@ namespace TasksForModul4
                     default:
                     Console.BackgroundColor = ConsoleColor.Yellow;
                     Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Your color is yellow!");
                     break;
             }
         }
