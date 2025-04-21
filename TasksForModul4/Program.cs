@@ -10,12 +10,29 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            var a = 6;
-            var b = 7;
+            Console.WriteLine("Введите свой любимый цвет на английском языке с маленькой буквы");
+            var color = Console.ReadLine();
 
-          var c = a != b ? a + b : b;
-            Console.WriteLine(c);
+            if (color == "red")
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("Your favourite color is red!");
+            }
 
+            else if (color == "green")
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("Your favourite color is green!");
+            }
+
+            else 
+            { 
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("Your favourite color is unknown!");
+            }
         }
     }
 }
