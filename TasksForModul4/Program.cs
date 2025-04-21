@@ -10,17 +10,11 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            var a = 5 + 6;
-            var b = 7 + 8;
+            var a = 6;
+            var b = 7;
 
-            if (a == b)
-            {
-                Console.WriteLine("Условие истинно");
-            }
-            else 
-            {
-                Console.WriteLine("Условие ложно");
-            }
+          var c = a != b ? a + b : b;
+            Console.WriteLine(c);
 
         }
     }
