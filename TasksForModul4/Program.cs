@@ -12,35 +12,40 @@ namespace TasksForModul4
         {
             Console.WriteLine("Введите свой любимый цвет на английском языке с маленькой буквы");
             var color = Console.ReadLine();
-
-            switch (color)
+            for (int i = 1; i < 5; i++)
             {
-                case "red":
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("Iteration {0}", i);
 
-                    Console.WriteLine("Your color is red!");
-                    break;
+                    switch (Console.ReadLine())
+            
+                   {
+                    case "red":
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.ForegroundColor = ConsoleColor.Black;
 
-                case "green":
-                    Console.BackgroundColor = ConsoleColor.Green;
-                    Console.ForegroundColor = ConsoleColor.Black;
+                        Console.WriteLine("Your color is red!");
+                        break;
 
-                    Console.WriteLine("Your color is green!");
-                    break;
+                    case "green":
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.Black;
 
-                case "cyan":
-                    Console.BackgroundColor = ConsoleColor.Cyan;
-                    Console.ForegroundColor = ConsoleColor.Black;
+                        Console.WriteLine("Your color is green!");
+                        break;
 
-                    Console.WriteLine("Your color is cyan!");
-                    break;
+                    case "cyan":
+                        Console.BackgroundColor = ConsoleColor.Cyan;
+                        Console.ForegroundColor = ConsoleColor.Black;
+
+                        Console.WriteLine("Your color is cyan!");
+                        break;
 
                     default:
-                    Console.BackgroundColor = ConsoleColor.Yellow;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Your color is yellow!");
-                    break;
+                        Console.BackgroundColor = ConsoleColor.Yellow;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Your color is yellow!");
+                        break;
+                }
             }
         }
     }
