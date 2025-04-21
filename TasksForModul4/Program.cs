@@ -12,13 +12,13 @@ namespace TasksForModul4
         {
             Console.WriteLine("Введите свой любимый цвет на английском языке с маленькой буквы");
             var color = Console.ReadLine();
-            for (int i = 5; i > 1; i--)
+            int t = 0;
+            do
             {
-                Console.WriteLine("Iteration {0}", i);
+                Console.WriteLine(t);
+                switch (Console.ReadLine())
 
-                    switch (Console.ReadLine())
-            
-                   {
+                {
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.ForegroundColor = ConsoleColor.Black;
@@ -46,7 +46,10 @@ namespace TasksForModul4
                         Console.WriteLine("Your color is yellow!");
                         break;
                 }
+
+                t++;
             }
+            while (t < 3);
         }
     }
 }
