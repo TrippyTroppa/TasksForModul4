@@ -18,7 +18,7 @@ namespace TasksForModul4
                 for (int j = i + 1; j < arr.Length; j++) 
                 {
 
-                if (arr[i] > arr[j]) 
+                if (arr[i] < arr[j]) 
                     {
                         temp = arr[i];
                         arr[i] = arr[j];
