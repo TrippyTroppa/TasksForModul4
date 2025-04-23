@@ -10,54 +10,39 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите свой любимый цвет на английском языке с маленькой буквы");
-            var color = Console.ReadLine();
-           
-            int k = 0;
+          
+            string[] favcolors = new string[3];
 
-            while (true)
+            for (int i = 0; i < favcolors.Length; i++)
             {
-                Console.WriteLine(k);
+                Console.WriteLine("Введите любимый цвет номер {0}", i + 1);
+                favcolors[i] = Console.ReadLine();
+            }
 
-                Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                switch (Console.ReadLine())
-
+            foreach (var color in favcolors)
+            {
+                switch (color)
                 {
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.ForegroundColor = ConsoleColor.Black;
-
                         Console.WriteLine("Your color is red!");
                         break;
 
                     case "green":
                         Console.BackgroundColor = ConsoleColor.Green;
                         Console.ForegroundColor = ConsoleColor.Black;
-
                         Console.WriteLine("Your color is green!");
                         break;
 
                     case "cyan":
                         Console.BackgroundColor = ConsoleColor.Cyan;
                         Console.ForegroundColor = ConsoleColor.Black;
-
                         Console.WriteLine("Your color is cyan!");
                         break;
-
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Your color is yellow!");
-                        break;
+                        continue;
                 }
-                var text = Console.ReadLine();
-
-                if (text == "stop")
-                {
-                    Console.WriteLine("Цикл остановлен");
-                    break;
-                }
-                k++;
             }
 
         }
