@@ -13,12 +13,12 @@ namespace TasksForModul4
             Console.Write("Введите свое имя: ");
             string name = Console.ReadLine();
 
-            Console.Write("Ваше имя по буквам: ");
-            foreach (char letter in name) 
+            Console.Write("Ваше имя в обратном порядке: ");
+
+            for (int i = name.Length - 1; i >= 0; i--)
             {
-                Console.Write(letter + " ");
+                Console.Write(name[i]);
             }
-            Console.WriteLine("Последняя буква имени: " + name[name.Length - 1]);
 
         }
     }
