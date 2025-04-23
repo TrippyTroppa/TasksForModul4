@@ -11,15 +11,15 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            int [] arrray = new int [] {-1,2,-3,4,-5,6,-7,-8,9};
-            var num = 0;
+            int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+            int temp = 0;
 
-            for (int i = 0; i < arrray.Length; i++)
+            foreach (var item in arr)
             {
-                if (arrray[i] > 0)
-                    num++;
+                if (item > 0)
+                temp++;
             }
-            Console.WriteLine(num);
+            Console.WriteLine(temp);
         }
     }
 }
