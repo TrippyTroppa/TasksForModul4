@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,27 +11,15 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
-            int temp;
+            int [] arrray = new int [] {-1,2,-3,4,-5,6,-7,-8,9};
+            var num = 0;
 
-            for (int i = 0; i < arr.Length; i++) 
+            for (int i = 0; i < arrray.Length; i++)
             {
-                for (int j = i + 1; j < arr.Length; j++) 
-                {
-
-                if (arr[i] < arr[j]) 
-                    {
-                        temp = arr[i];
-                        arr[i] = arr[j];
-                        arr[j] = temp;
-
-                    }
-                } 
+                if (arrray[i] > 0)
+                    num++;
             }
-            foreach (var item in arr)
-            {
-                Console.Write(item + " ");
-            }
+            Console.WriteLine(num);
         }
     }
 }
