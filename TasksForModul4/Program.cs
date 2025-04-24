@@ -11,10 +11,14 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            var anketa = (name: "Jane", age: 27);
+            (string name, int age) anketa;
 
-            Console.WriteLine("Ваше имя: {0}", anketa.name);
-            Console.WriteLine("Ваш возраст: {0}", anketa.age);
+            Console.Write("Введите ваше имя: ");
+            anketa.name = Console.ReadLine();
+            Console.Write("Введите ваш возраст: ");
+            anketa.age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Ваше имя: {anketa.name}\nВаш возраст: {anketa.age}");
 
         }
     
