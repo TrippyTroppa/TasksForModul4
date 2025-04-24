@@ -11,17 +11,23 @@ namespace TasksForModul4
     {
         static void Main(string[] args)
         {
-            (string name, int age) anketa;
+            var (name, age) = ("Евгения", 27);
 
-            Console.Write("Введите ваше имя: ");
-            anketa.name = Console.ReadLine();
-            Console.Write("Введите ваш возраст: ");
-            anketa.age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Моё имя: {0}", name);
+            Console.WriteLine("Мой возраст: {0}", age);
 
-            Console.WriteLine($"Ваше имя: {anketa.name}\nВаш возраст: {anketa.age}");
+            Console.Write("Введите имя: ");
+            name = Console.ReadLine();
+            Console.Write("Введите возраст с цифрами:");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ваше имя: {0}", name);
+            Console.WriteLine("Ваш возраст: {0}", age);
 
         }
-    
+
     }
+    
+    
 }
 
